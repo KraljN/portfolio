@@ -1,0 +1,459 @@
+$font:'Dosis', sans-serif;
+$bojaTamna: #00213a;
+$bojaSvetla:#f5efef;
+$bojaIzmedju:#426c7a;
+$bojaSlova:#7f93b0;
+@mixin slova($boja ,$stajl, $velicina, $debljina:0){
+    color: $boja;
+    font:{
+        family:$stajl;
+        size:$velicina;
+    }
+    @if $debljina!=0{
+         font-weight: $debljina;   
+    }
+}
+html{
+    scroll-behavior: smooth;
+  }
+ *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+.omot{
+    margin: 0% auto;
+    width: 80%;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    border-bottom: 0.5px solid #f5efef;
+    z-index: 10;
+    ul{
+        height:50px;
+        margin: 0% auto;
+        display: flex;
+        width: 50%;
+        justify-content:space-around;
+        color:$bojaSvetla;
+        li{
+            display: flex;
+            border-radius: 4px;
+            display:inherit;
+            justify-content: center;
+            align-items: center;
+            background-color: $bojaTamna;
+            width:22%;
+            list-style-type:none;
+            padding: 1% 0%;
+            &:hover{
+                transition: background-color 0.5s;
+                background-color: $bojaIzmedju;
+            }
+        }
+        a{
+            @include slova($bojaSvetla, $font , 30px);
+            text-decoration:none;
+            color:$bojaSvetla;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                font-size: 25px;
+                margin-right: 4%;//pri refrešovanju stranice nekad neće da se učita(čim se uđe i izađe iz inspect elements biva učitano
+
+            }
+        }
+
+    }
+}
+#Home{
+    padding-top:55px;
+    width: 100%;
+    background-color: $bojaSvetla;
+    #Sadrzaj{
+        width:100%;
+        display: flex;
+    }
+}
+#sadrzajLevo{
+    width: 390px;
+    display: block;
+}
+#sadrzajGore{
+    width: 100%;
+    height: 65%;
+    border-radius: 4px 4px 0px 0px;
+    img{
+        width: 100%;
+        height:100%;
+        border-radius: 4px 4px 0px 0px;
+    }
+}
+#sadrzajDole{
+    border-top: 2px solid #f5efef;
+    width: 100%;
+    height:35%;
+    background-color:$bojaTamna;
+    padding: 4% 15% 6% 15%;
+    border-radius: 0px 0px 5px 5px;
+        h3{
+            @include slova($bojaSvetla, $font , 32px);
+        }
+        li{
+            list-style-type: none;
+            color: $bojaSlova;
+            font-size: 19px;
+            display: flex;
+            margin-top:6%;
+
+            span{
+                display: block;
+                margin-left: 5px;
+                @include slova($bojaSvetla, $font , 18px);
+            }
+            i{ 
+                margin-right: 3%;
+                font-size: 19px;
+            }
+            &:last-child{
+                align-items: center;
+                a{
+                    @include slova($bojaSlova, $font , inherit);
+                    text-decoration:none;
+                    &:hover{
+                        color: $bojaSvetla;
+                    }
+                }
+            }
+        }
+}
+#sadrzajDesno{
+    width:70%;
+    padding: 80px 0px 80px 80px;
+    h1{
+        @include slova($bojaTamna, $font , 90px, 900)
+    }
+    h2{
+        @include slova($bojaSlova, $font , 35px)
+    }
+    h3{
+        margin-top: 110px;
+        @include slova(black, $font , 35px, 800)
+        } 
+    p{
+        margin-top:50px;
+        @include slova($bojaSlova, $font , 23px)
+    }
+}
+.aktivni{
+    background-color:$bojaTamna;
+    transition:0.6s;
+}
+#Projekti{
+    width:auto;
+    h2{
+        margin-top:20px;
+        text-align: center;
+        @include slova($bojaTamna, $font , 60px, 700)
+    }
+    .Projekat{
+        display:flex;
+        width: auto;
+        padding: 40px 0px;
+        a{
+            width:40%;
+            figure{
+                background-color: $bojaTamna;
+                border-radius: 10px;
+                display: block;
+                width:100%;
+                figcaption{
+                    background-color:$bojaTamna;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        @include slova($bojaSlova, $font , 23px)
+                    }
+                }
+                img{
+                    border-radius: 10px; 
+                    width:100%;
+                    filter: brightness(75%);
+                    height: 100%;
+                }  
+            }
+        }   
+        .projekatOpis{
+            width:60%;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            h3{
+                margin-bottom:4%;
+                @include slova($bojaTamna, $font , 35px, 600)
+            }
+            h4{ 
+                @include slova($bojaTamna, $font , 30px, 550)
+             }
+             h5{ 
+                 margin-top:1%;
+                @include slova($bojaTamna, $font , 25px, 500)
+             }
+             p{ 
+                margin-top: 1%;
+                @include slova($bojaTamna, $font , 25px, 500)
+             }
+             h6{ 
+                @include slova($bojaTamna, $font , 20px, 500);
+                margin-top:10px;
+             }
+        }
+    }
+}
+#Vestine{
+    width: 100%;
+    background-color: $bojaSvetla;
+    padding-bottom: 20px;
+    h2{
+        margin-bottom: 40px;
+        text-align: center;
+        @include slova($bojaTamna, $font , 60px, 700)
+    }
+    #Grafik{
+        width:100%;
+        .linija{
+        margin:20px auto;
+        height:32px;
+        width:60%;
+        border-radius: 10px;
+        position:relative;
+        background-color: #a5c1cf;
+            .linijaObojena{
+                position: absolute;
+                height:100%;
+                border-radius: 10px 0px 0px 10px;
+            }
+            .narandzasta{
+                background-color: #f89554;
+            }
+            .braon{
+                background-color:#864317;
+            }
+            .plava{
+                background-color:$bojaTamna;
+            }
+            .crna{
+                background-color:#0683bb;
+            }
+            .html{
+                background-color: hsl(24, 66%, 49%)
+            }
+            .css3{
+                background-color: #57341d;
+            }
+            .sql{
+                background-color:#30344d;
+            }
+            .bootstrap{
+                background-color: #1d6a8c;
+            }
+            .naslov{
+                border-radius: 10px 0px 0px 10px;
+                width:98px;
+                height:100%;
+                position: absolute;
+                .naslov-padding{
+                    width:100%;
+                    height:100%;
+                    margin-left: 10px;
+                    p{
+                        @include slova(white, $font , 23px)
+                    }
+                }
+            }
+            .procenat{
+                width:45px;
+                height:100%;
+                right:1px;
+                position: absolute;
+                p{
+                    @include slova(white, $font , 23px)
+                }
+                    
+            }
+        }
+    }
+}
+#Edukacija{
+    h2{
+        margin:20px 0px;
+        text-align: center;
+        @include slova($bojaTamna, $font , 60px, 700)
+    }
+    width:auto;
+    margin-bottom: 50px;
+    #karta{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        #skolaSlika{
+            float:left;
+            width:40%;
+            height: 100%;
+            img{
+                width: 100%;
+                border-radius: 7px;
+            }
+        }
+        #skolaOpis{
+            width:55%;
+            padding: 5px 0px;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+            .skola{
+                width: 100%;
+                display: flex;
+                .godina{
+                    width:20%;
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include slova($bojaSlova, $font , 30px);
+                }
+                .godinaSlika{
+                    width: 15%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .opis{
+                    width: 63%;
+                    text-align: center;
+                    margin-left:2%;
+                    h3{
+                        @include slova($bojaTamna, $font , 25px);
+                        margin-top:5px;
+                    }
+                    h4{
+                        @include slova($bojaTamna, $font , 20px, 500);
+                        margin-top:5px;
+                    }
+                }
+            }
+        }
+    }   
+}
+footer{
+    width: 100%;
+    background-color: $bojaTamna;
+    #flex{
+        justify-content: space-between;
+        display: flex;
+        height:100%; 
+        #folow{
+            width:30%;
+            height:100%;
+            text-align: center;
+            padding: 2%;
+            h4{
+                @include slova($bojaSvetla, $font , 35px, 200);
+            }
+            ul{
+                margin-top: 50px;
+            }
+            li{
+                width: 40px;
+                border-radius: 50%;
+                border: 1px solid $bojaSvetla;
+                display: inline-block;
+                list-style-type: none;
+                margin: 2%;
+                @include slova($bojaSvetla, $font , 22px);
+                font-weight: 200!important;
+                padding: 2%;
+                a{
+                  color: $bojaSvetla;  
+                }
+                &:hover{
+                    transition: background-color 0.5s;
+                    background-color: $bojaIzmedju;
+                }
+            }
+            p{
+                margin: 75px 0% 2% -24%;
+                @include slova($bojaSvetla, $font , 19px);
+            }
+        }
+        #contact{
+            width: 30%;
+            height:100%;
+            text-align: center;
+            margin-right: 10%;
+            h4{
+                @include slova($bojaSvetla, $font , 35px, 200);
+                margin-top: 5%;
+            }
+            form{
+                margin: 4% 0%;
+                input{
+                    @mixin forma{
+                        width: 100%;
+                        height:25px;
+                        border-radius: 4px;
+                        outline: none;
+                        border: 0px;
+                        background-color: $bojaSvetla;
+                    }
+                    &[type="text"]{
+                        @include forma()
+                    }
+                    &[type="email"]{
+                        @include forma()
+                    }
+                    &[type="text"]:first-child{
+                        margin-bottom: 2%;
+                    }
+                    &[placeholder]{
+                        padding-left: 1%;
+                        @include slova($bojaIzmedju, $font , 15px, 400);
+                    }
+                    &[type="submit"]{
+                        width: 30%;
+                        height:30px;
+                        margin-top: 2%;
+                        @include slova($bojaIzmedju, $font , 20px, 400);
+                        border-radius: 5px;
+                        border:0px;
+                        outline: none;
+                        background-color: $bojaSvetla;
+                        &:hover{
+                            background-color: #929292;
+                            transition: 1s;
+                        }
+                    }
+                }
+                textarea{
+                    width: 100%;
+                    height:100px;
+                    margin-top: 2%;
+                    border-radius: 4px;
+                    outline: none;
+                    border: 0px;
+                    resize: none;
+                    background-color: $bojaSvetla;
+                    &[placeholder]{
+                        padding-left: 1%;
+                        @include slova($bojaTamna, $font , 15px, 400);
+                    }
+                }
+            }
+        }
+}
+}

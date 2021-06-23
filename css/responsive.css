@@ -1,0 +1,435 @@
+@media only screen and (max-width: 1400px) {
+ nav ul li a, .aktvini ul li a {
+     font-size: 22px;
+ }
+ nav ul, .aktivni ul{
+      height:40px;
+}
+#Home{
+       padding-top: 45px;
+}
+nav ul li i, .aktivni ul li i{
+    font-size: 20px;
+}
+#sadrzajLevo{
+    width: 390px;
+}
+#sadrzajDole li, #sadrzajDole li i{
+    font-size: 17px;
+}
+#sadrzajDole h3{
+    font-size: 29px;
+}
+#sadrzajDole li span{
+    font-size: 16px;
+}
+#sadrzajDole{ 
+    padding: 8% 15% 10% 15%;
+}
+#sadrzajDesno p{
+    font-size: 20px;
+}
+#sadrzajDesno{
+    padding-top:60px;
+}
+#sadrzajDesno p{
+    text-align: justify;
+}
+#Projekti .Projekat .projekatOpis h1{
+    font-size: 85px;
+}
+#Projekti .Projekat .projekatOpis h3{
+    font-size: 28px;
+}
+#Projekti .Projekat .projekatOpis h4{
+    font-size: 23px;
+}
+#Projekti .Projekat .projekatOpis h5{
+    font-size: 21px;
+}
+#Projekti .Projekat .projekatOpis h6{
+    font-size: 18px;
+}
+#Projekti .Projekat .projekatOpis p{
+    font-size: 20px;
+}
+#Projekti .Projekat a figure figcaption p{
+    font-size: 21px;
+}
+#Edukacija #karta #skolaOpis .skola .opis h3{
+    font-size: 22px;
+}
+#Edukacija #karta #skolaOpis .skola .opis h4{
+    font-size: 17px;
+}
+}
+  @media only screen and (max-width: 1100px){
+    nav ul li a, .aktivni ul li a {
+        font-size: 17px;
+      }
+      nav ul li i, .aktivni ul li i{
+          font-size: 15px;
+      } 
+    nav ul, .aktivni ul{
+        height:30px;
+    }
+    #Home{
+        padding-top: 35px;
+    }
+    #Sadrzaj{
+        flex-direction: column;
+    }
+    #sadrzajLevo{
+        display: flex;
+        width:100%;
+    }
+    #sadrzajGore{
+        width: 350px;
+        height:auto;
+        border-radius: 4px 0px 0px 4px;
+    }
+    #sadrzajGore img{
+        border-radius: 4px 0px 0px 4px;
+    }
+    #sadrzajDole{
+       width:700px;
+       height:100%;
+       border-top: none;
+        padding: 9% 12% 10% 10%;
+        border-radius: 0px 4px 4px 0px;
+    }
+    #sadrzajDole li, #sadrzajDole li i{
+        font-size: 23px;
+    }
+    #sadrzajDole h3{
+        font-size: 28px;
+    }
+    #sadrzajDole li span{
+        font-size: 19px;
+    }
+    #sadrzajDesno{
+        width:auto;
+        padding-left:10px;
+    }
+    #Projekti .Projekat .projekatOpis h1{
+        font-size: 78px;
+    }
+    #Projekti .Projekat .projekatOpis h3{
+        font-size: 22px;
+    }
+    #Projekti .Projekat .projekatOpis h4{
+        font-size: 19px;
+    }
+    #Projekti .Projekat .projekatOpis h5{
+        font-size: 18px;
+    }
+    #Projekti .Projekat .projekatOpis h6{
+        font-size: 15px;
+    }
+    #Projekti .Projekat .projekatOpis p{
+        font-size: 17px;
+    }
+    #Projekti .Projekat a figure figcaption p{
+        font-size: 17px;
+    }
+    #Edukacija #karta #skolaOpis .skola .opis h3{
+        font-size: 19px;
+    }
+    #Edukacija #karta #skolaOpis .skola .opis h4{
+        font-size: 15px;
+    }
+    #Edukacija #karta #skolaOpis .skola .godina p{
+        font-size: 26px;
+    }
+    footer #flex #folow h4, footer #flex #contact h4{
+        font-size: 32px;
+    }
+    footer #flex #folow li{
+        width:35px;
+        font-size: 19px;
+    }
+    footer #flex #folow p{
+        font-size: 17px;
+        margin-top: 60px;
+    }
+    footer #flex #contact form input[type="text"], footer #flex #contact form input[type="email"]{
+        height: 20px;
+    }
+    footer #flex #contact form textarea{
+        height: 90px;
+    }
+    footer #flex #contact form input[type="submit"]{
+        height:25px;
+        font-size: 18px;
+    }
+    footer #flex #contact form input[placeholder], footer #flex #contact form textarea[placeholder]{
+        font-size: 14px;
+    }
+  }
+  @media only screen and (max-width: 900px){
+    nav ul, .aktivni ul{
+        display:block;
+        margin: 0px;
+        width: auto;
+        height: auto;
+    }
+    nav ul li, .aktivni ul li{
+        width: 100%;
+        text-align: center;
+        height:40px;
+        border-radius: 0px;
+    }
+    nav ul li i{
+        display: none !important;
+    }
+    nav ul li a{
+        width: 100%;
+        height:100%;
+    }
+    ul, nav, .aktvini{
+        position:relative;
+    }
+    #Home{
+        padding: 5px;
+    }
+    #sadrzajDesno h1{
+        font-size: 75px;
+    }
+    #sadrzajDesno h2{
+        font-size: 30px;
+    }
+    #Projekti .Projekat {
+        flex-direction: column;
+    }
+    #Projekti .Projekat a{
+        width: 100%;
+    }
+    #Projekti .Projekat a figure figcaption p{
+        font-size: 21px;
+    }
+    #Projekti .Projekat .projekatOpis{
+        width: 100%;
+    }
+    #Projekti .Projekat .projekatOpis h3{
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    #Projekti .Projekat .projekatOpis h4{
+        font-size: 24px;
+    }
+    #Projekti .Projekat .projekatOpis h5{
+        font-size: 24px;
+    }
+    #Projekti .Projekat .projekatOpis h6{
+        font-size: 21px;
+    }
+    #Projekti .Projekat .projekatOpis p{
+        font-size: 22px;
+    }
+    #skolaSlika{
+        display: none;
+    }
+    #skolaOpis{
+        width: 100%!important;
+    }
+    #Edukacija #karta #skolaOpis .skola:last-child{
+        margin-top: 10px;
+    }
+    #flex{
+        flex-direction: column-reverse;
+    }
+    footer #flex #contact {
+        width: 100%;
+        padding: 0px 15%;
+    }
+    footer #flex #folow{
+        width: 100%;
+    }
+    footer #flex #folow li{
+        width:47px;
+        font-size: 21px;
+    }
+    footer #flex #folow p{
+        text-align: center;
+        font-size: 17px;
+        margin: 10% 0% 2% 0%;
+    }
+    footer #flex #contact form input[type="text"], footer #flex #contact form input[type="email"]{
+        height: 25px;
+    }
+    footer #flex #contact form textarea{
+        height: 110px;
+        margin-top: 1%;
+    }
+    footer #flex #contact form input[type="submit"]{
+        height:35px;
+        font-size: 19px;
+    }
+    footer #flex #contact form input[placeholder], footer #flex #contact form textarea[placeholder]{
+        font-size: 16px;
+    }
+    footer #flex #folow ul{
+        margin-top: 5%;
+    }
+    footer #flex #contact form input[type="text"]:first-child{
+        margin-bottom: 1%;
+    }
+  }
+@media only screen and (max-width: 800px){
+
+    #sadrzajLevo{
+        display: flex;
+        flex-direction: column;
+    }
+    #sadrzajGore{
+        width: auto;
+        height: auto;
+        border-radius: 4px 4px 0px 0px;
+    }
+    #sadrzajGore img{
+        border-radius: 4px 4px 0px 0px;
+    }
+    #sadrzajDole{
+        width: auto;
+        border-radius: 0px 0px 5px 5px;
+        border-top: 0.5px solid #f5efef;
+    }
+    #Projekti h2, #Vestine h2, #Edukacija h2  {
+        font-size: 53px;
+    }
+    #Vestine #Grafik .linija .naslov .naslov-padding p, #Vestine #Grafik .linija .procenat p {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    #Vestine #Grafik .linija .naslov{
+        width:78px;
+    }
+  }
+  @media only screen and (max-width: 700px){
+    #Edukacija #karta #skolaOpis .skola{
+        flex-direction: column;
+    }
+    #Edukacija #karta #skolaOpis .skola .godina{
+        margin-bottom:10px;
+        width:100%;
+    }
+    #Edukacija #karta #skolaOpis .skola .godinaSlika{
+        margin-bottom: 15px;
+        width:20%;
+    }
+    #Edukacija #karta #skolaOpis .skola .opis{
+        margin: 0px 0px 25px 0px;
+        width:100%;
+    }
+    #Edukacija #karta #skolaOpis .skola .godinaSlika{
+        width:100%;
+        text-align: center;
+    }
+    #Edukacija #karta #skolaOpis .skola .godinaSlika img{
+        width:20%;
+    }
+    #Edukacija #karta #skolaOpis .skola .opis{
+        text-align: center;
+    }
+  }
+@media only screen and (max-width: 480px){
+    #sadrzajDole li{
+        font-size: 15px;
+    }
+    #sadrzajDole li i{
+        font-size: 14px;
+    }
+    #sadrzajDole li:last-child a{
+        font-size: 16px;
+    }
+    #sadrzajDole h3{
+        font-size: 20px;
+    }
+    #sadrzajDole li span{
+        font-size: 13px;
+    }
+    #Projekti .Projekat .projekatOpis h3{
+        font-size: 26px;
+        margin-top: 30px;
+    }
+    #Projekti .Projekat .projekatOpis h4{
+        font-size: 20px;
+    }
+    #Projekti .Projekat .projekatOpis h5{
+        font-size: 20px;
+    }
+    #Projekti .Projekat .projekatOpis h6{
+        font-size: 18px;
+    }
+    #Projekti .Projekat .projekatOpis p{
+        font-size: 19px;
+    }
+}
+@media only screen and (max-width: 500px){
+    #sadrzajDesno{
+        text-align: center;
+    }
+    #sadrzajDesno h1{
+        font-size: 60px;
+    }
+    #sadrzajDesno h2{
+        font-size: 28px;
+    }
+    #sadrzajDesno h3{
+        font-size: 24px;
+        margin-top: 60px;
+    }
+    #sadrzajDesno p{
+        font-size: 18px;
+    }
+    #Projekti h2, #Vestine h2, #Edukacija h2 {
+        font-size: 48px;
+    }
+    #Projekti .Projekat a figure figcaption p {
+        font-size: 16px;
+    }
+    #Vestine #Grafik .linija .naslov .naslov-padding p, #Vestine #Grafik .linija .procenat p {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    #Vestine #Grafik .linija .naslov{
+        width:64px;
+    }
+    #Vestine #Grafik .linija .procenat{
+        width:33px;
+    }
+    #Vestine #Grafik .linija{
+        height: 26px;
+    }
+    footer #flex #folow{
+        width: 100%;
+    }
+    footer #flex #folow li{
+        width:47px;
+        font-size: 21px;
+        display: block;
+        margin: 3% auto;
+    }
+    footer #flex #folow p{
+        text-align: center;
+        font-size: 17px;
+        margin: 8% 0% 2% 0%;
+    }
+    footer #flex #contact form input[type="text"], footer #flex #contact form input[type="email"]{
+        height: 20px;
+    }
+    footer #flex #contact form textarea{
+        height: 90px;
+    }
+    footer #flex #contact form input[type="submit"]{
+        height:25px;
+        font-size: 18px;
+    }
+    footer #flex #contact form input[placeholder], footer #flex #contact form textarea[placeholder]{
+        font-size: 14px;
+    }
+    footer #flex #folow li{
+        width:35px;
+        font-size: 19px;
+    }
+}

@@ -1,0 +1,436 @@
+html {
+  scroll-behavior: smooth; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.omot {
+  margin: 0% auto;
+  width: 80%; }
+
+nav {
+  width: 100%;
+  position: fixed;
+  border-bottom: 0.5px solid #f5efef;
+  z-index: 10; }
+  nav ul {
+    height: 50px;
+    margin: 0% auto;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    color: #f5efef; }
+    nav ul li {
+      display: flex;
+      border-radius: 4px;
+      display: inherit;
+      justify-content: center;
+      align-items: center;
+      background-color: #00213a;
+      width: 22%;
+      list-style-type: none;
+      padding: 1% 0%; }
+      nav ul li:hover {
+        transition: background-color 0.5s;
+        background-color: #426c7a; }
+    nav ul a {
+      color: #f5efef;
+      font-family: "Dosis", sans-serif;
+      font-size: 30px;
+      text-decoration: none;
+      color: #f5efef;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      nav ul a i {
+        font-size: 25px;
+        margin-right: 4%; }
+
+#Home {
+  padding-top: 55px;
+  width: 100%;
+  background-color: #f5efef; }
+  #Home #Sadrzaj {
+    width: 100%;
+    display: flex; }
+
+#sadrzajLevo {
+  width: 390px;
+  display: block; }
+
+#sadrzajGore {
+  width: 100%;
+  height: 65%;
+  border-radius: 4px 4px 0px 0px; }
+  #sadrzajGore img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px 4px 0px 0px; }
+
+#sadrzajDole {
+  border-top: 2px solid #f5efef;
+  width: 100%;
+  height: 35%;
+  background-color: #00213a;
+  padding: 4% 15% 6% 15%;
+  border-radius: 0px 0px 5px 5px; }
+  #sadrzajDole h3 {
+    color: #f5efef;
+    font-family: "Dosis", sans-serif;
+    font-size: 32px; }
+  #sadrzajDole li {
+    list-style-type: none;
+    color: #7f93b0;
+    font-size: 19px;
+    display: flex;
+    margin-top: 6%; }
+    #sadrzajDole li span {
+      display: block;
+      margin-left: 5px;
+      color: #f5efef;
+      font-family: "Dosis", sans-serif;
+      font-size: 18px; }
+    #sadrzajDole li i {
+      margin-right: 3%;
+      font-size: 19px; }
+    #sadrzajDole li:last-child {
+      align-items: center; }
+      #sadrzajDole li:last-child a {
+        color: #7f93b0;
+        font-family: "Dosis", sans-serif;
+        font-size: inherit;
+        text-decoration: none; }
+        #sadrzajDole li:last-child a:hover {
+          color: #f5efef; }
+
+#sadrzajDesno {
+  width: 70%;
+  padding: 80px 0px 80px 80px; }
+  #sadrzajDesno h1 {
+    color: #00213a;
+    font-family: "Dosis", sans-serif;
+    font-size: 90px;
+    font-weight: 900; }
+  #sadrzajDesno h2 {
+    color: #7f93b0;
+    font-family: "Dosis", sans-serif;
+    font-size: 35px; }
+  #sadrzajDesno h3 {
+    margin-top: 110px;
+    color: black;
+    font-family: "Dosis", sans-serif;
+    font-size: 35px;
+    font-weight: 800; }
+  #sadrzajDesno p {
+    margin-top: 50px;
+    color: #7f93b0;
+    font-family: "Dosis", sans-serif;
+    font-size: 23px; }
+
+.aktivni {
+  background-color: #00213a;
+  transition: 0.6s; }
+
+#Projekti {
+  width: auto; }
+  #Projekti h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: #00213a;
+    font-family: "Dosis", sans-serif;
+    font-size: 60px;
+    font-weight: 700; }
+  #Projekti .Projekat {
+    display: flex;
+    width: auto;
+    padding: 40px 0px; }
+    #Projekti .Projekat a {
+      width: 40%; }
+      #Projekti .Projekat a figure {
+        background-color: #00213a;
+        border-radius: 10px;
+        display: block;
+        width: 100%; }
+        #Projekti .Projekat a figure figcaption {
+          background-color: #00213a;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          #Projekti .Projekat a figure figcaption p {
+            color: #7f93b0;
+            font-family: "Dosis", sans-serif;
+            font-size: 23px; }
+        #Projekti .Projekat a figure img {
+          border-radius: 10px;
+          width: 100%;
+          filter: brightness(75%);
+          height: 100%; }
+    #Projekti .Projekat .projekatOpis {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #Projekti .Projekat .projekatOpis h3 {
+        margin-bottom: 4%;
+        color: #00213a;
+        font-family: "Dosis", sans-serif;
+        font-size: 35px;
+        font-weight: 600; }
+      #Projekti .Projekat .projekatOpis h4 {
+        color: #00213a;
+        font-family: "Dosis", sans-serif;
+        font-size: 30px;
+        font-weight: 550; }
+      #Projekti .Projekat .projekatOpis h5 {
+        margin-top: 1%;
+        color: #00213a;
+        font-family: "Dosis", sans-serif;
+        font-size: 25px;
+        font-weight: 500; }
+      #Projekti .Projekat .projekatOpis p {
+        margin-top: 1%;
+        color: #00213a;
+        font-family: "Dosis", sans-serif;
+        font-size: 25px;
+        font-weight: 500; }
+      #Projekti .Projekat .projekatOpis h6 {
+        color: #00213a;
+        font-family: "Dosis", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 10px; }
+
+#Vestine {
+  width: 100%;
+  background-color: #f5efef;
+  padding-bottom: 20px; }
+  #Vestine h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #00213a;
+    font-family: "Dosis", sans-serif;
+    font-size: 60px;
+    font-weight: 700; }
+  #Vestine #Grafik {
+    width: 100%; }
+    #Vestine #Grafik .linija {
+      margin: 20px auto;
+      height: 32px;
+      width: 60%;
+      border-radius: 10px;
+      position: relative;
+      background-color: #a5c1cf; }
+      #Vestine #Grafik .linija .linijaObojena {
+        position: absolute;
+        height: 100%;
+        border-radius: 10px 0px 0px 10px; }
+      #Vestine #Grafik .linija .narandzasta {
+        background-color: #f89554; }
+      #Vestine #Grafik .linija .braon {
+        background-color: #864317; }
+      #Vestine #Grafik .linija .plava {
+        background-color: #00213a; }
+      #Vestine #Grafik .linija .crna {
+        background-color: #0683bb; }
+      #Vestine #Grafik .linija .html {
+        background-color: #cf6c2a; }
+      #Vestine #Grafik .linija .css3 {
+        background-color: #57341d; }
+      #Vestine #Grafik .linija .sql {
+        background-color: #30344d; }
+      #Vestine #Grafik .linija .bootstrap {
+        background-color: #1d6a8c; }
+      #Vestine #Grafik .linija .naslov {
+        border-radius: 10px 0px 0px 10px;
+        width: 98px;
+        height: 100%;
+        position: absolute; }
+        #Vestine #Grafik .linija .naslov .naslov-padding {
+          width: 100%;
+          height: 100%;
+          margin-left: 10px; }
+          #Vestine #Grafik .linija .naslov .naslov-padding p {
+            color: white;
+            font-family: "Dosis", sans-serif;
+            font-size: 23px; }
+      #Vestine #Grafik .linija .procenat {
+        width: 45px;
+        height: 100%;
+        right: 1px;
+        position: absolute; }
+        #Vestine #Grafik .linija .procenat p {
+          color: white;
+          font-family: "Dosis", sans-serif;
+          font-size: 23px; }
+
+#Edukacija {
+  width: auto;
+  margin-bottom: 50px; }
+  #Edukacija h2 {
+    margin: 20px 0px;
+    text-align: center;
+    color: #00213a;
+    font-family: "Dosis", sans-serif;
+    font-size: 60px;
+    font-weight: 700; }
+  #Edukacija #karta {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    #Edukacija #karta #skolaSlika {
+      float: left;
+      width: 40%;
+      height: 100%; }
+      #Edukacija #karta #skolaSlika img {
+        width: 100%;
+        border-radius: 7px; }
+    #Edukacija #karta #skolaOpis {
+      width: 55%;
+      padding: 5px 0px;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-around; }
+      #Edukacija #karta #skolaOpis .skola {
+        width: 100%;
+        display: flex; }
+        #Edukacija #karta #skolaOpis .skola .godina {
+          width: 20%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #7f93b0;
+          font-family: "Dosis", sans-serif;
+          font-size: 30px; }
+        #Edukacija #karta #skolaOpis .skola .godinaSlika {
+          width: 15%; }
+          #Edukacija #karta #skolaOpis .skola .godinaSlika img {
+            width: 100%;
+            height: 100%; }
+        #Edukacija #karta #skolaOpis .skola .opis {
+          width: 63%;
+          text-align: center;
+          margin-left: 2%; }
+          #Edukacija #karta #skolaOpis .skola .opis h3 {
+            color: #00213a;
+            font-family: "Dosis", sans-serif;
+            font-size: 25px;
+            margin-top: 5px; }
+          #Edukacija #karta #skolaOpis .skola .opis h4 {
+            color: #00213a;
+            font-family: "Dosis", sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 5px; }
+
+footer {
+  width: 100%;
+  background-color: #00213a; }
+  footer #flex {
+    justify-content: space-between;
+    display: flex;
+    height: 100%; }
+    footer #flex #folow {
+      width: 30%;
+      height: 100%;
+      text-align: center;
+      padding: 2%; }
+      footer #flex #folow h4 {
+        color: #f5efef;
+        font-family: "Dosis", sans-serif;
+        font-size: 35px;
+        font-weight: 200; }
+      footer #flex #folow ul {
+        margin-top: 50px; }
+      footer #flex #folow li {
+        width: 40px;
+        border-radius: 50%;
+        border: 1px solid #f5efef;
+        display: inline-block;
+        list-style-type: none;
+        margin: 2%;
+        color: #f5efef;
+        font-family: "Dosis", sans-serif;
+        font-size: 22px;
+        font-weight: 200 !important;
+        padding: 2%; }
+        footer #flex #folow li a {
+          color: #f5efef; }
+        footer #flex #folow li:hover {
+          transition: background-color 0.5s;
+          background-color: #426c7a; }
+      footer #flex #folow p {
+        margin: 75px 0% 2% -24%;
+        color: #f5efef;
+        font-family: "Dosis", sans-serif;
+        font-size: 19px; }
+    footer #flex #contact {
+      width: 30%;
+      height: 100%;
+      text-align: center;
+      margin-right: 10%; }
+      footer #flex #contact h4 {
+        color: #f5efef;
+        font-family: "Dosis", sans-serif;
+        font-size: 35px;
+        font-weight: 200;
+        margin-top: 5%; }
+      footer #flex #contact form {
+        margin: 4% 0%; }
+        footer #flex #contact form input[type="text"] {
+          width: 100%;
+          height: 25px;
+          border-radius: 4px;
+          outline: none;
+          border: 0px;
+          background-color: #f5efef; }
+        footer #flex #contact form input[type="email"] {
+          width: 100%;
+          height: 25px;
+          border-radius: 4px;
+          outline: none;
+          border: 0px;
+          background-color: #f5efef; }
+        footer #flex #contact form input[type="text"]:first-child {
+          margin-bottom: 2%; }
+        footer #flex #contact form input[placeholder] {
+          padding-left: 1%;
+          color: #426c7a;
+          font-family: "Dosis", sans-serif;
+          font-size: 15px;
+          font-weight: 400; }
+        footer #flex #contact form input[type="submit"] {
+          width: 30%;
+          height: 30px;
+          margin-top: 2%;
+          color: #426c7a;
+          font-family: "Dosis", sans-serif;
+          font-size: 20px;
+          font-weight: 400;
+          border-radius: 5px;
+          border: 0px;
+          outline: none;
+          background-color: #f5efef; }
+          footer #flex #contact form input[type="submit"]:hover {
+            background-color: #929292;
+            transition: 1s; }
+        footer #flex #contact form textarea {
+          width: 100%;
+          height: 100px;
+          margin-top: 2%;
+          border-radius: 4px;
+          outline: none;
+          border: 0px;
+          resize: none;
+          background-color: #f5efef; }
+          footer #flex #contact form textarea[placeholder] {
+            padding-left: 1%;
+            color: #00213a;
+            font-family: "Dosis", sans-serif;
+            font-size: 15px;
+            font-weight: 400; }
+
+/*# sourceMappingURL=styleSass.css.map */
